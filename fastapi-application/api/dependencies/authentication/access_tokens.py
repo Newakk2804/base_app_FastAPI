@@ -10,7 +10,7 @@ if TYPE_CHECKING:
 
 async def get_access_tokens_db(
     session: Annotated[
-        AsyncSession,
+        "AsyncSession",
         Depends(db_helper.session_getter),
     ]
 ):
