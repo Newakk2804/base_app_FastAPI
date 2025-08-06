@@ -1,4 +1,5 @@
 from typing import TYPE_CHECKING
+
 from core.models.base import Base
 from core.models.mixins.id_int_pk import IdIntPkMixin
 from fastapi_users.db import SQLAlchemyBaseUserTable, SQLAlchemyUserDatabase
