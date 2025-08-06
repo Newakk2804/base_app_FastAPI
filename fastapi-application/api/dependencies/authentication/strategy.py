@@ -1,6 +1,6 @@
 from typing import TYPE_CHECKING, Annotated
 
-from api.dependencies.access_tokens import get_access_tokens_db
+from api.dependencies.authentication.access_tokens import get_access_tokens_db
 from core.config import settings
 from fastapi import Depends
 from fastapi_users.authentication.strategy.db import (
