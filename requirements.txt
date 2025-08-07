@@ -16,6 +16,7 @@ fastapi-users==14.0.1
 fastapi-users-db-sqlalchemy==7.0.0
 flake8==7.3.0
 greenlet==3.2.3
+gunicorn==23.0.0
 h11==0.16.0
 idna==3.10
 isort==6.0.1
