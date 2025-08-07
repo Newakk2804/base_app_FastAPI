@@ -1,10 +1,13 @@
 from contextlib import asynccontextmanager
+import logging
 
 import uvicorn
 from api import router as api_router
 from core.config import settings
 from core.models import db_helper
 from fastapi import FastAPI
+
+logging.basicConfig(format=settings.logging.log_format)
 
 
 @asynccontextmanager
