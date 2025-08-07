@@ -17,7 +17,7 @@ def get_database_strategy(
     access_tokens_db: Annotated[
         "AccessTokenDatabase[AccessToken]",
         Depends(get_access_tokens_db),
-    ]
+    ],
 ) -> DatabaseStrategy:
     return DatabaseStrategy(
         database=access_tokens_db,
